@@ -215,22 +215,30 @@ document.addEventListener('DOMContentLoaded', function() {
     // Highlight active section in navigation
     function updateActiveNav() {
         let current = '';
-        
+        const navbar = document.getElementById('navbar');
+
         sections.forEach(section => {
             const sectionTop = section.offsetTop - 100;
             const sectionHeight = section.clientHeight;
-            
+
             if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
                 current = section.getAttribute('id');
             }
         });
 
+        // Update nav links
         navLinks.forEach(link => {
             link.classList.remove('active');
             if (link.getAttribute('href') === `#${current}`) {
                 link.classList.add('active');
             }
         });
+
+        // Update navbar background color based on current section
+        navbar.classList.remove('section-home', 'section-portfolio', 'section-experience', 'section-about', 'section-contact');
+        if (current) {
+            navbar.classList.add(`section-${current}`);
+        }
     }
 
     // Update active nav on scroll

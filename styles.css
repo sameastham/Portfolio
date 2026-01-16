@@ -85,6 +85,53 @@ body {
     align-items: center;
     z-index: 1000;
     border-bottom: 1px solid rgba(255, 0, 255, 0.2);
+    transition: background 0.4s ease, border-color 0.4s ease;
+}
+
+/* Navbar section-specific colors */
+.navbar.section-home {
+    background: rgba(10, 10, 10, 0.95);
+    border-bottom-color: rgba(255, 0, 255, 0.2);
+}
+
+.navbar.section-home .nav-link.active {
+    color: #ff66ff;
+}
+
+.navbar.section-portfolio {
+    background: rgba(13, 61, 74, 0.95);
+    border-bottom-color: rgba(0, 212, 255, 0.3);
+}
+
+.navbar.section-portfolio .nav-link.active {
+    color: #66e0ff;
+}
+
+.navbar.section-experience {
+    background: rgba(196, 154, 63, 0.95);
+    border-bottom-color: rgba(255, 215, 0, 0.3);
+}
+
+.navbar.section-experience .nav-link.active {
+    color: #ffe066;
+}
+
+.navbar.section-about {
+    background: rgba(74, 124, 89, 0.95);
+    border-bottom-color: rgba(144, 238, 144, 0.3);
+}
+
+.navbar.section-about .nav-link.active {
+    color: #90ee90;
+}
+
+.navbar.section-contact {
+    background: rgba(139, 58, 47, 0.95);
+    border-bottom-color: rgba(255, 182, 193, 0.3);
+}
+
+.navbar.section-contact .nav-link.active {
+    color: #ffb6c1;
 }
 
 .nav-brand {
@@ -109,8 +156,7 @@ body {
     padding: 5px 0;
 }
 
-.nav-link:hover,
-.nav-link.active {
+.nav-link:hover {
     color: var(--primary-pink);
 }
 
@@ -121,7 +167,7 @@ body {
     left: 0;
     right: 0;
     height: 2px;
-    background: var(--primary-pink);
+    background: currentColor;
 }
 
 .menu-toggle {
