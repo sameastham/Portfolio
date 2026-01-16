@@ -175,6 +175,7 @@ body {
 }
 
 .gradient-text {
+    font-family: 'Monoton', cursive;
     background: linear-gradient(135deg, #ff00ff, #8a2be2);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -243,7 +244,7 @@ body {
 /* Hero Illustration */
 .hero-illustration {
     position: relative;
-    height: 400px;
+    height: 450px;
 }
 
 .illustration-wrapper {
@@ -254,51 +255,71 @@ body {
 
 .ux-card {
     position: absolute;
-    background: linear-gradient(135deg, rgba(255, 0, 255, 0.2), rgba(138, 43, 226, 0.2));
-    border: 2px solid rgba(255, 0, 255, 0.4);
+    background: linear-gradient(135deg, rgba(255, 0, 255, 0.15), rgba(138, 43, 226, 0.15));
+    border: 2px solid rgba(255, 0, 255, 0.5);
     border-radius: 12px;
     backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.ux-card svg {
+    width: 100%;
+    height: 100%;
+    stroke: rgba(255, 0, 255, 0.8);
 }
 
 .ux-card.card-1 {
-    width: 120px;
-    height: 80px;
-    top: 50px;
-    left: 20px;
+    width: 45px;
+    height: 45px;
+    top: 70px;
+    right: 310px;
+    left: auto;
     animation: float 3s ease-in-out infinite;
 }
 
 .ux-card.card-2 {
-    width: 140px;
-    height: 100px;
-    top: 100px;
-    left: 80px;
+    width: 80px;
+    height: 55px;
+    top: 80px;
+    right: 30px;
+    left: auto;
     animation: float 3s ease-in-out infinite 0.5s;
 }
 
 .ux-card.card-3 {
-    width: 100px;
-    height: 70px;
-    top: 80px;
-    right: 100px;
+    width: 45px;
+    height: 45px;
+    top: 160px;
+    right: 20px;
+    left: auto;
     animation: float 3s ease-in-out infinite 1s;
 }
 
-.designer-figure {
+.ux-card.card-4 {
+    width: 45px;
+    height: 45px;
+    bottom: 120px;
+    right: 30px;
+    left: auto;
+    animation: float 3s ease-in-out infinite 1.5s;
+}
+
+.designer-at-desk {
     position: absolute;
-    bottom: 40px;
-    right: 60px;
-    width: 200px;
-    height: 200px;
-    background: linear-gradient(135deg, rgba(138, 43, 226, 0.3), rgba(255, 0, 255, 0.3));
-    border-radius: 50% 50% 0 0;
-    animation: pulse 2s ease-in-out infinite;
+    right: 50px;
+    bottom: 20px;
+    width: 320px;
+    height: auto;
 }
 
 .purpose-badge {
     position: absolute;
-    top: 30px;
-    right: 30px;
+    top: 60px;
+    right: 180px;
+    left: auto;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -905,7 +926,56 @@ body {
     }
 
     .hero-illustration {
-        height: 300px;
+        height: 350px;
+    }
+
+    .designer-at-desk {
+        width: 260px;
+        right: 30px;
+    }
+
+    .ux-card.card-1 {
+        width: 38px;
+        height: 38px;
+        top: 60px;
+        right: 250px;
+    }
+
+    .ux-card.card-2 {
+        width: 65px;
+        height: 45px;
+        top: 70px;
+        right: 20px;
+    }
+
+    .ux-card.card-3 {
+        width: 38px;
+        height: 38px;
+        top: 135px;
+        right: 15px;
+    }
+
+    .ux-card.card-4 {
+        width: 38px;
+        height: 38px;
+        bottom: 100px;
+        right: 20px;
+    }
+
+    .purpose-badge {
+        top: 55px;
+        right: 145px;
+        left: auto;
+        padding: 10px 15px;
+    }
+
+    .purpose-badge svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    .purpose-badge span {
+        font-size: 0.8rem;
     }
 
     .about-content {
