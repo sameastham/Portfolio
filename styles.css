@@ -18,6 +18,7 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
 }
 
 body {
@@ -59,6 +60,7 @@ body {
     padding: 80px 20px 40px;
     position: relative;
     overflow: hidden;
+    scroll-snap-align: start;
 }
 
 .container {
@@ -1075,5 +1077,9 @@ body {
         animation-duration: 0.01ms !important;
         animation-iteration-count: 1 !important;
         transition-duration: 0.01ms !important;
+    }
+
+    html {
+        scroll-snap-type: none;
     }
 }
