@@ -17,7 +17,7 @@
 }
 
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: auto;
     scroll-snap-type: y mandatory;
 }
 
@@ -392,6 +392,13 @@ body {
     align-items: center;
     gap: 10px;
     animation: bounce 2s ease-in-out infinite;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.scroll-indicator:hover {
+    transform: scale(1.1);
 }
 
 .scroll-indicator span {

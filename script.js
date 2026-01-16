@@ -570,6 +570,43 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+// Custom smooth scroll function with adjustable duration
+function smoothScrollTo(targetPosition, duration) {
+    const startPosition = window.scrollY;
+    const distance = targetPosition - startPosition;
+    let startTime = null;
+    const html = document.documentElement;
+
+    // Temporarily disable scroll-snap during animation
+    html.style.scrollSnapType = 'none';
+
+    function animation(currentTime) {
+        if (startTime === null) startTime = currentTime;
+        const timeElapsed = currentTime - startTime;
+        const progress = Math.min(timeElapsed / duration, 1);
+
+        // Easing function (ease-in-out)
+        const ease = progress < 0.5
+            ? 2 * progress * progress
+            : 1 - Math.pow(-2 * progress + 2, 2) / 2;
+
+        window.scrollTo(0, startPosition + distance * ease);
+
+        if (timeElapsed < duration) {
+            requestAnimationFrame(animation);
+        } else {
+            // Re-enable scroll-snap after animation completes
+            html.style.scrollSnapType = 'y mandatory';
+        }
+    }
+
+    requestAnimationFrame(animation);
+}
+
+// Scroll duration settings (in milliseconds)
+const SCROLL_DURATION_DEFAULT = 500;
+const SCROLL_DURATION_SEE_MORE = 500;
+
 // Smooth scroll for all anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -579,10 +616,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             const target = document.querySelector(href);
             if (target) {
                 const offsetTop = target.offsetTop - 60;
-                window.scrollTo({
-                    top: offsetTop,
-                    behavior: 'smooth'
-                });
+                const duration = this.classList.contains('scroll-indicator')
+                    ? SCROLL_DURATION_SEE_MORE
+                    : SCROLL_DURATION_DEFAULT;
+                smoothScrollTo(offsetTop, duration);
             }
         }
     });
