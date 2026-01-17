@@ -234,6 +234,8 @@ body {
 .hero-section {
     background: var(--dark-bg);
     position: relative;
+    align-items: flex-start;
+    padding-top: 140px;
 }
 
 .hero-section::before {
@@ -259,7 +261,7 @@ body {
     font-size: 4rem;
     font-weight: 900;
     line-height: 1.1;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .gradient-text {
@@ -273,13 +275,15 @@ body {
 .hero-name {
     font-size: 3rem;
     font-weight: 800;
-    margin-bottom: 10px;
+    margin-bottom: 0;
+    line-height: 1;
 }
 
 .hero-subtitle {
-    font-size: 1.5rem;
+    font-size: 3rem;
     font-weight: 300;
     margin-bottom: 30px;
+    line-height: 1;
     color: rgba(255, 255, 255, 0.8);
 }
 
@@ -398,8 +402,8 @@ body {
 .designer-at-desk {
     position: absolute;
     right: 50px;
-    bottom: 20px;
-    width: 320px;
+    top: 80px;
+    width: 640px;
     height: auto;
 }
 
@@ -1141,7 +1145,7 @@ body {
     }
 
     .hero-subtitle {
-        font-size: 1.2rem;
+        font-size: 2rem;
     }
 
     .section-title {
