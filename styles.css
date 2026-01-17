@@ -358,9 +358,15 @@ body {
     stroke: rgba(255, 0, 255, 0.8);
 }
 
+.ux-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
 .ux-card.card-1 {
-    width: 45px;
-    height: 45px;
+    width: 105px;
+    height: 75px;
     top: 70px;
     right: 620px;
     left: auto;
@@ -368,8 +374,8 @@ body {
 }
 
 .ux-card.card-2 {
-    width: 80px;
-    height: 55px;
+    width: 105px;
+    height: 75px;
     top: 120px;
     right: 120px;
     left: auto;
@@ -377,8 +383,8 @@ body {
 }
 
 .ux-card.card-3 {
-    width: 45px;
-    height: 45px;
+    width: 105px;
+    height: 75px;
     top: 250px;
     right: 120px;
     left: auto;
@@ -386,10 +392,10 @@ body {
 }
 
 .ux-card.card-4 {
-    width: 45px;
-    height: 45px;
+    width: 105px;
+    height: 75px;
     bottom: 145px;
-    right: 68§60px;
+    right: 680px;
     left: auto;
     animation: float 3s ease-in-out infinite 1.5s;
 }
