@@ -79,23 +79,18 @@ body {
     right: 0;
     background: rgba(10, 10, 10, 0.95);
     backdrop-filter: blur(10px);
-    padding: 20px 0;
+    padding: 20px calc((100vw - 1400px) / 2);
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 1000;
     border-bottom: 1px solid rgba(255, 0, 255, 0.2);
     transition: background 0.4s ease, border-color 0.4s ease;
-    max-width: 1400px;
-    margin: 0 auto;
 }
 
-@media (min-width: 1401px) {
+@media (max-width: 1400px) {
     .navbar {
-        left: 50%;
-        transform: translateX(-50%);
-        right: auto;
-        width: 1400px;
+        padding: 20px 20px;
     }
 }
 
