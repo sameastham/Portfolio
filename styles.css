@@ -344,8 +344,6 @@ body {
 
 .ux-card {
     position: absolute;
-    background: linear-gradient(135deg, rgba(255, 0, 255, 0.15), rgba(138, 43, 226, 0.15));
-    border: 2px solid rgba(255, 0, 255, 0.5);
     border-radius: 12px;
     backdrop-filter: blur(10px);
     display: flex;
@@ -364,7 +362,7 @@ body {
     width: 45px;
     height: 45px;
     top: 70px;
-    right: 310px;
+    right: 620px;
     left: auto;
     animation: float 3s ease-in-out infinite;
 }
@@ -372,8 +370,8 @@ body {
 .ux-card.card-2 {
     width: 80px;
     height: 55px;
-    top: 80px;
-    right: 30px;
+    top: 120px;
+    right: 120px;
     left: auto;
     animation: float 3s ease-in-out infinite 0.5s;
 }
@@ -381,8 +379,8 @@ body {
 .ux-card.card-3 {
     width: 45px;
     height: 45px;
-    top: 160px;
-    right: 20px;
+    top: 250px;
+    right: 120px;
     left: auto;
     animation: float 3s ease-in-out infinite 1s;
 }
@@ -390,8 +388,8 @@ body {
 .ux-card.card-4 {
     width: 45px;
     height: 45px;
-    bottom: 120px;
-    right: 30px;
+    bottom: 145px;
+    right: 68§60px;
     left: auto;
     animation: float 3s ease-in-out infinite 1.5s;
 }
@@ -405,28 +403,19 @@ body {
 }
 
 .purpose-badge {
+    color: #FB7AF5;
     position: absolute;
-    top: 60px;
-    right: 180px;
+    top: 8px;
+    right: 365px;
     left: auto;
     display: flex;
     align-items: center;
-    gap: 10px;
-    padding: 15px 20px;
-    background: rgba(255, 0, 255, 0.1);
-    border: 2px solid var(--primary-pink);
-    border-radius: 12px;
-    backdrop-filter: blur(10px);
-    animation: glow 2s ease-in-out infinite;
+    font-size: 2rem;
+    line-height: 35px;
 }
 
-.purpose-badge svg {
-    color: var(--primary-pink);
-}
-
-.purpose-badge span {
-    font-size: 0.9rem;
-    line-height: 1.3;
+#purpose {
+    font-size: 2.8rem
 }
 
 .scroll-indicator {
