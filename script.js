@@ -409,7 +409,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         'Accept': 'application/json'
                     },
                     body: JSON.stringify({
-                        access_key: 'YOUR_WEB3FORMS_ACCESS_KEY_HERE', // Replace with your key
+                        access_key: 'a9b645b4-79a4-4aae-a976-fd316f67cba7',
                         name: formData.name,
                         email: formData.email,
                         message: formData.message,
