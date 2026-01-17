@@ -94,8 +94,19 @@ body {
     border-bottom-color: rgba(255, 0, 255, 0.2);
 }
 
+.nav-link {
+    font-family: 'Chivo', sans-serif;
+    font-weight: 100;
+}
+
 .navbar.section-home .nav-link.active {
+    font-family: 'Chivo', sans-serif;
+    font-weight: 800;
     color: #ff66ff;
+}
+
+.nav-link.active {
+    font-weight: 800;
 }
 
 .navbar.section-portfolio {
@@ -135,6 +146,7 @@ body {
 }
 
 .nav-brand {
+    font-family: 'Oswald', sans-serif;
     font-size: 1.2rem;
     font-weight: 700;
     color: var(--text-light);
@@ -424,29 +436,18 @@ body {
 }
 
 .section-title {
+    font-family: 'Monoton', cursive;
     font-size: 5rem;
     font-weight: 900;
     margin-bottom: 60px;
     text-align: center;
     position: relative;
-    text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.3);
+    /*text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.3);*/
     letter-spacing: 2px;
 }
 
 .portfolio-section .section-title {
     color: rgba(0, 212, 255, 0.5);
-}
-
-.section-title::before {
-    content: attr(data-text);
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-    color: transparent;
-    -webkit-text-stroke: 2px rgba(255, 255, 255, 0.1);
-    font-size: 5.5rem;
 }
 
 .portfolio-grid {
@@ -793,6 +794,14 @@ body {
 
 .about-image {
     position: relative;
+}
+
+.about-image img {
+    width: 280px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 16px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
 }
 
 .image-placeholder {
