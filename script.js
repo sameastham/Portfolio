@@ -2,128 +2,285 @@
 const projectData = {
     realtheory: {
         title: "RealTheory",
-        subtitle: "Full UX Including Design System & Analytics",
+        subtitle: "From “consultant” to product-shaping design leadership",
         description: `
             <h3>Overview</h3>
-            <p>Led comprehensive UX redesign for RealTheory's rental platform, implementing AI-driven evaluation systems and cognitive UX principles to dramatically improve user conversion and reduce rental turn-over objections.</p>
-            
-            <h3>Key Achievements</h3>
+            <p>
+            At RealTheory, my role evolved quickly from supporting execution to
+            <strong>setting product direction and building the design operating system</strong> the company needed to scale. In
+            a startup, “UX” isn’t a lane—it’s a lever. I became the person who could turn ambiguity into clarity: aligning
+            leaders on what to build next, defining how we’d validate it, and establishing the systems to ship confidently.
+            </p>
+
+            <h3>Problem framing and decision-making</h3>
+            <p>Instead of starting with UI, I started with questions:</p>
             <ul>
-                <li><strong>50% Reduction in RTOs:</strong> Implemented AI-driven system evaluation combined with Cognitive UX principles to address user objections before they occurred</li>
-                <li><strong>EasyRentals Launch:</strong> Designed and launched a complete Ready-to-Deploy offering that streamlined the rental process for both landlords and tenants</li>
-                <li><strong>Seamless Onboarding:</strong> Created an intuitive onboarding flow that guided users through complex rental processes with clarity and confidence</li>
+                <li>Which user behaviors matter most to the business right now?</li>
+                <li>Where are we losing users or momentum?</li>
+                <li>What assumptions are we making that we can validate cheaply?</li>
             </ul>
+            <p>
+                That approach helped the team prioritize features based on <b>user value + feasibility + measurable outcomes</b>,
+                rather than intuition or stakeholder volume.
+            </p>
 
-            <h3>Process</h3>
-            <p>Conducted extensive user research to identify pain points in the rental process. Developed comprehensive design system including UI components, interaction patterns, and accessibility guidelines. Integrated analytics tracking to measure user behavior and continuously optimize the experience.</p>
+            <h3>Building an insight engine (analytics → strategy)</h3>
+            <p>
+                To reduce guesswork, I researched analytics platforms and drove the decision to adopt <strong>Pendo</strong>—not as
+                a reporting tool, but as a <strong>product decision engine</strong>. I partnered with the team to define meaningful
+                events, identify where users struggled or dropped off, and translate that data into focused design and product bets.
+                This created a feedback loop where we could observe behavior, form hypotheses, and iterate with intent.
+            </p>
 
-            <h3>Tools & Technologies</h3>
-            <p>Figma, Adobe XD, Google Analytics, Hotjar, Axure RP</p>
+            <h3>Systems thinking: design system + collaboration infrastructure</h3>
+            <p>
+                I also recognized that speed without consistency becomes expensive. I led the move from Sketch to Figma to enable
+                shared libraries, faster iteration, and better handoff. More importantly, I built the company’s design system so new
+                work didn’t reset quality every sprint. That design system wasn’t “UI polish”—it was governance: reusable patterns,
+                interaction standards, and a common language that made the team faster and reduced rework.
+            </p>
+
+            <h3>Force multiplier effect</h3>
+            <p>
+                I facilitated design sessions that kept product, engineering, and stakeholders aligned—especially when tradeoffs
+                were unavoidable. My goal wasn’t to “win design arguments”; it was to ensure the team made decisions we could defend
+                with evidence, and that our product behavior stayed coherent as we scaled.
+            </p>
+
+            <h3>Forward-looking lens</h3>
+            <p>
+                This experience set the foundation for AI-era product design: building systems that learn, evolve, and stay
+                interpretable. The muscle I developed—instrumentation, insight loops, scalable patterns—translates directly into
+                <strong>human-AI workflows</strong> where trust, clarity, and iteration speed matter.
+            </p>
         `,
         links: `
-            <a href="https://behance.net" target="_blank" rel="noopener noreferrer" class="btn btn-primary">View on Behance</a>
-            <a href="https://alva.uno" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">View on Alva.uno</a>
+            <a href="https://www.realtheory.ai" target="_blank" rel="noopener noreferrer" class="btn btn-primary">View RealTheory</a>
         `
     },
     att: {
         title: "AT&T",
-        subtitle: "Network Outage Manager",
+        subtitle: "AT&T — Leading a greenfield platform with enterprise-scale complexity (Network Outage Manager)",
         description: `
             <h3>Overview</h3>
-            <p>Designed a unified alert and monitoring system for AT&T's network operations team, enabling rapid response to outages and seamless communication across mobile and web platforms.</p>
+            <p>At AT&T, my work matured into full-spectrum product leadership through design. I wasn’t designing “a UI.” I was <strong>creating a shared operational framework</strong> for outage management—aligning multiple teams, roles, and priorities into a system that increased visibility, accountability, and speed of response.</p>
             
-            <h3>Key Achievements</h3>
-            <ul>
-                <li><strong>Unified Alert System:</strong> Created a cohesive notification architecture that works seamlessly across iOS, Android, and web platforms</li>
-                <li><strong>Real-time Monitoring:</strong> Designed intuitive dashboard for network status tracking with customizable alert thresholds</li>
-                <li><strong>Multi-system Integration:</strong> Streamlined data from multiple backend systems into a single, coherent interface</li>
-                <li><strong>Rapid Response:</strong> Reduced mean time to acknowledge (MTTA) by 40% through improved alert prioritization and routing</li>
-            </ul>
+            <h3>Problem framing: unify a fragmented ecosystem</h3>
+              <p>
+                Outage work is inherently cross-functional and high-stakes. The initial challenge wasn’t feature design—it was <strong>system definition</strong>:
+                <br />- What is an outage, operationally and technically?
+                <br />- What decisions must different roles make, and with what context?
+                <br />- Where does information break down across teams?
+              </p>
+              <p>
+                I partnered with stakeholders to map workflows, identify failure points (handoffs, missing context, inconsistent definitions), and define what “success” meant: faster triage, fewer blind spots, clearer ownership, and reduced time lost to searching and reconciling data.
+              </p>
 
-            <h3>Process</h3>
-            <p>Worked closely with network operations teams to understand their workflow and pain points. Conducted usability testing with actual operators to refine the interface. Implemented progressive disclosure to manage information density while maintaining quick access to critical data.</p>
+              <h3>Systems thinking: architecture before interface</h3>
+              <p>
+                I owned the <strong>information architecture</strong> to ensure the platform could scale across teams and evolve as requirements changed. That meant designing around:
+                <br />- Role-based needs without fragmenting the experience
+                <br />- A shared data model and interaction patterns
+                <br />- A navigation and search strategy that supports both scanning and deep investigation
+              </p>
+              <p>
+                The result was a cohesive system: outage tracking, duration and assignment visibility, technician notes, global search, customer views, and detailed drilldowns—built as one framework rather than a patchwork of screens.
+              </p>
 
-            <h3>Tools & Technologies</h3>
-            <p>Figma, Jira, Angular, Bootstrap, WebSocket APIs</p>
+              <h3>Cross-functional leadership: turning competing priorities into product direction</h3>
+              <p>
+                Enterprise tools are defined by tradeoffs—performance, compliance, operational realities, and stakeholder urgency. I regularly ran alignment conversations where I:
+                <br />- clarified constraints,
+                <br />- framed decisions in terms of user + business impact,
+                <br />- and drove agreement on what we’d ship now vs. later.
+              </p>
+              <p>
+                This work required credibility with engineering and leadership—because the goal wasn’t “design approval,” it was organizational adoption.
+              </p>
+
+              <h3>Human-AI interaction: designing trust and interpretability</h3>
+              <p>
+                The AI summary feature was a key inflection point: it wasn’t about adding AI, it was about <strong>reducing cognitive load without hiding critical detail</strong>. I focused the design around trust-building patterns:
+                <br />- clear sourcing (what was summarized),
+                <br />- easy access to raw notes,
+                <br />- and a workflow that supports verification when stakes are high.
+              </p>
+
+              <h3>Measuring impact (insert your metrics)</h3>
+              <p>
+                This platform was designed to reduce time-to-understand, time-to-triage, and coordination overhead. If you have them, this is where you’d plug in:
+                <br />- adoption across teams,
+                <br />- reduced mean time to resolution,
+                <br />- decreased time spent searching,
+                <br />- or reduced escalation volume.
+              </p>
+
+              <h3>Forward-looking lens</h3>
+              <p>
+                Network Outage Manager is exactly the kind of environment where AI maturity will matter most: summarization, anomaly detection, recommendation, and decision support. My experience here positions me to lead <strong>AI-enabled operational platforms</strong> where accuracy, transparency, and workflow integration are non-negotiable.
+              </p>
         `,
         links: `
-            <a href="https://alva.uno" target="_blank" rel="noopener noreferrer" class="btn btn-primary">View Case Study</a>
+            
         `
     },
     homedepot: {
         title: "The Home Depot",
-        subtitle: "Enterprise Application Launch",
+        subtitle: "Owning a platform that directly impacts workforce transformation (Launch)",
         description: `
             <h3>Overview</h3>
-            <p>Led UX efforts for a major enterprise application launch at The Home Depot, focusing on catalog configuration, platform modernization, and system-wide UI standardization.</p>
-            
-            <h3>Key Achievements</h3>
-            <ul>
-                <li><strong>Product Catalog System:</strong> Designed comprehensive interface for managing 100,000+ product SKUs with advanced filtering and search capabilities</li>
-                <li><strong>Provider Platform Modernization:</strong> Redesigned legacy systems with modern UI patterns and responsive design</li>
-                <li><strong>Component Library:</strong> Created standardized UI component library used across 15+ applications</li>
-                <li><strong>Quality Assurance:</strong> Identified and resolved 230+ critical system defects through rigorous UX audits</li>
-            </ul>
+            <p>
+            At The Home Depot, I moved from designing features to designing <strong>an internal product ecosystem</strong> tied to organizational outcomes: training throughput, retention, and enabling talent mobility. My role became a blend of UX leadership, product strategy, and behavioral analytics.
+          </p>
 
-            <h3>Process</h3>
-            <p>Collaborated with cross-functional teams including product managers, developers, and business stakeholders. Established design system governance and documentation. Conducted training sessions for internal teams on new UI patterns and best practices.</p>
+          <h3>Problem framing: design for outcomes, not features</h3>
+          <p>
+            Launch wasn’t just a tool—it was the backbone of a program that helped employees change careers. That meant success couldn’t be defined as “a smooth experience” alone. We needed to answer:
+            <br />- Where do candidates drop out—and why?
+            <br />- What does each user type need to move forward confidently?
+            <br />- Which operational workflows (attendance, scheduling, approvals) create bottlenecks?
+          </p>
+          <p>
+            I framed the product around program outcomes: reducing friction, increasing completion, and improving clarity for administrators and instructors so the program could scale without breaking.
+          </p>
 
-            <h3>Tools & Technologies</h3>
-            <p>Figma, Sketch, ASP.NET MVC, Angular, Storybook</p>
+          <h3>Systems thinking: multi-role platform design</h3>
+          <p>
+            Launch required a role-based architecture that still felt cohesive. I created personas and journeys across students, instructors, and administrators to ensure the system supported different incentives without becoming fragmented. The key was designing rules and workflows that could handle real-world complexity:
+            <br />- approvals and scheduling constraints,
+            <br />- attendance and accountability,
+            <br />- dropouts and edge cases,
+            <br />- curriculum access and progression.
+          </p>
+
+          <h3>Analytics and experimentation: turning design into measurable improvement</h3>
+          <p>
+            I implemented analytics to move beyond opinions and into evidence. That allowed us to:
+            <br />- identify drop-off points in the application and participation lifecycle,
+            <br />- run A/B tests to validate improvements,
+            <br />- and prioritize roadmap changes based on measurable behavioral impact.
+          </p>
+          <p>
+            This helped the team make smarter tradeoffs—investing in what moved outcomes rather than what felt urgent.
+          </p>
+
+          <h3>Cross-functional leadership in a lean team</h3>
+          <p>
+            With a five-person team and me as the sole designer, I became the alignment hub—translating between stakeholders, program operators, and engineering constraints. I led decision-making conversations that balanced:
+            <br />- user needs,
+            <br />- program realities,
+            <br />- and speed-to-delivery.
+          </p>
+
+          <h3>Impact (insert your metrics)</h3>
+          <p>
+            Strong metrics here might include:
+            <br />- improved program completion rate,
+            <br />- reduced dropout rate at specific steps,
+            <br />- increased application conversion,
+            <br />- reduced admin time per cohort.
+          </p>
+
+          <h3>Forward-looking lens</h3>
+          <p>
+            My work on Launch prepared me to lead AI-enabled learning and workforce systems—where personalization, guidance, and decision support can improve outcomes, but only if the experience is interpretable, fair, and operationally grounded.
+          </p>
         `,
         links: `
-            <a href="#contact" class="btn btn-primary">Learn More</a>
+            
         `
     },
     assurant: {
         title: "Assurant",
-        subtitle: "Mobile Device Protection Platform",
+        subtitle: "Designing across platforms, products, and partners at enterprise scale",
         description: `
             <h3>Overview</h3>
-            <p>Developed comprehensive UX strategy for Assurant's mobile device protection platform, focusing on improving communication, functionality, and global accessibility.</p>
-            
-            <h3>Key Achievements</h3>
-            <ul>
-                <li><strong>Enhanced Communication:</strong> Redesigned customer communication flows to reduce support inquiries by 35%</li>
-                <li><strong>Competitive Infrastructure:</strong> Built scalable design system that positioned Assurant as industry leader in device protection UX</li>
-                <li><strong>Modern Codebase:</strong> Aligned design strategy with development modernization efforts for improved maintainability</li>
-                <li><strong>Global Accessibility:</strong> Implemented localization support for 12 languages and WCAG 2.1 AA compliance</li>
-            </ul>
+            <p>
+            At Assurant, my role matured into <strong>portfolio-level systems thinking</strong>. Over six years, I moved from improving a specific internal tool to shaping cross-product UX quality, leading design reviews, and building scalable frameworks for partner-facing experiences.
+          </p>
 
-            <h3>Process</h3>
-            <p>Conducted competitive analysis and user research across multiple markets. Created persona-based design approach to address diverse user needs. Implemented continuous testing and iteration based on user feedback and analytics.</p>
+          <h3>Problem framing: unify complexity without oversimplifying reality</h3>
+          <p>
+            In the Global Warranty initiative, the core challenge wasn’t UI—it was fragmentation. Claims data lived across systems, and employees needed a unified operational view. I focused on:
+            <br />- where users lost time,
+            <br />- where errors were introduced,
+            <br />- and which parts of the workflow created avoidable support load.
+          </p>
 
-            <h3>Tools & Technologies</h3>
-            <p>Figma, InVision, React Native, iOS, Android</p>
+          <h3>Improving a constrained platform through UX rigor</h3>
+          <p>
+            Microsoft Dynamics CRM came with serious UI constraints. Instead of accepting those limits, I applied heuristic evaluation and frequent usability testing to identify the highest-cost usability failures—then designed targeted interventions that improved clarity, reduced errors, and increased efficiency for claims-handling teams.
+          </p>
+
+          <h3>Product and business strategy: enabling partner scale with white-label infrastructure</h3>
+          <p>
+            A major strategic contribution was creating a white-label framework that allowed phone companies to plug in their design systems while leveraging a common underlying product. That’s not just design—it’s platform strategy:
+            <br />- consistency where it drives scale,
+            <br />- flexibility where it drives adoption,
+            <br />- and governance to prevent divergence.
+          </p>
+
+          <h3>Cross-functional leadership and quality elevation</h3>
+          <p>
+            On the more innovation-focused team, I worked across product, engineering, and research to improve designs through iterative validation. As lead designer, I reviewed other designers’ work, raised usability standards, and helped align teams on principles that improved coherence across products.
+          </p>
+
+          <h3>Impact</h3>
+          <p>
+            - reduced handling time per claim,
+            <br />- fewer user errors,
+            <br />- reduced support tickets,
+            <br />- increased partner adoption,
+            <br />- faster partner onboarding cycles.
+          </p>
+
+          <h3>Forward-looking lens</h3>
+          <p>
+            This blend—enterprise workflows, partner ecosystems, and scalable design governance—maps directly to AI-era platform design, where systems must evolve without losing trust, consistency, or compliance readiness.
+          </p>
         `,
         links: `
-            <a href="https://behance.net" target="_blank" rel="noopener noreferrer" class="btn btn-primary">View on Behance</a>
-            <a href="https://alva.uno" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">View on Alva.uno</a>
+            
         `
     },
     renovistics: {
         title: "Renovistics",
-        subtitle: "Claims Management Platform",
+        subtitle: "Early-stage product thinking through real-world constraints",
         description: `
             <h3>Overview</h3>
-            <p>Designed intelligent claims management system for Renovistics, focusing on automated routing, multi-system integration, and customizable workflows for enterprise clients.</p>
+            <p>Renovistics was where I built the “real world” UX muscle: balancing business constraints, stakeholder goals, time, and budget—while still delivering experiences that convert.</p>
             
-            <h3>Key Achievements</h3>
-            <ul>
-                <li><strong>Intelligent Routing:</strong> Created smart routing system that automatically assigns claims based on complexity, expertise, and workload</li>
-                <li><strong>Automated Alerts:</strong> Designed notification framework that keeps all stakeholders informed without creating alert fatigue</li>
-                <li><strong>Unified Interface:</strong> Integrated data from multiple legacy systems into single, intuitive dashboard</li>
-                <li><strong>Workflow Customization:</strong> Enabled enterprise clients to configure workflows to match their unique business processes</li>
-            </ul>
+            <h3>Role evolution: from designer to trusted advisor</h3>
+              <p>
+                In small business environments, you’re not hired for deliverables—you’re hired for decisions. I acted as a strategic partner helping clients clarify:
+                <br />- what success meant (signups, leads, conversion),
+                <br />- what messaging mattered,
+                <br />- and what the simplest experience was that could achieve results.
+              </p>
 
-            <h3>Process</h3>
-            <p>Mapped existing claims processes through stakeholder interviews and shadowing sessions. Identified bottlenecks and pain points. Designed iterative prototypes tested with actual claims adjusters and supervisors.</p>
+              <h3>Problem framing: conversion as the product</h3>
+              <p>
+                I approached each project like a funnel:
+                <br />- What brings users in?
+                <br />- What questions stop them from acting?
+                <br />- What friction can we remove without increasing cost?
+              </p>
+              <p>
+                This helped prioritize what truly mattered—clarity, credibility, and next-step momentum—over ornamental complexity.
+              </p>
 
-            <h3>Tools & Technologies</h3>
-            <p>Axure RP, Balsamiq, Angular, Bootstrap</p>
+              <h3>Systems thinking at a smaller scale</h3>
+              <p>
+                Even with simpler sites, I applied scalable thinking: reusable components, consistent interaction patterns, and straightforward content hierarchies that made sites easier to maintain and evolve.
+              </p>
+
+              <h3>Forward-looking lens</h3>
+              <p>
+                This work shaped how I think about product strategy today: constraints are not a limitation—they’re the environment. That’s especially true in AI-enabled products, where you have to ship value fast, learn quickly, and avoid complexity that users can’t understand.
+              </p>
         `,
         links: `
-            <a href="https://alva.uno" target="_blank" rel="noopener noreferrer" class="btn btn-primary">View Case Study</a>
+            
         `
     },
     freelance: {
@@ -131,24 +288,50 @@ const projectData = {
         subtitle: "Various Client Engagements",
         description: `
             <h3>Overview</h3>
-            <p>Diverse portfolio of freelance UX projects spanning government agencies, startups, and established enterprises. Focused on improving user experience through better design, documentation, and training.</p>
+            <p>My freelance work reflects how I operate when there’s no organizational structure handed to me: I create clarity, define strategy, and build systems that work.</p>
             
-            <h3>Key Projects</h3>
-            <ul>
-                <li><strong>Government Applications:</strong> Partnered with federal and state agencies to design citizen-facing applications with focus on accessibility and clarity</li>
-                <li><strong>Team Productivity:</strong> Improved team morale and efficiency through better documentation and streamlined design handoff processes</li>
-                <li><strong>Training Materials:</strong> Created simplified training guides and video tutorials for complex enterprise systems</li>
-                <li><strong>Localization:</strong> Implemented internationalization strategies across various projects to support global audiences</li>
-            </ul>
+            <h3>Role evolution: ownership from ambiguity to launch</h3>
+              <p>
+                Freelance requires a different level of leadership: scoping ambiguous problems, setting success criteria, and making tradeoffs explicit. Across projects, I consistently established:
+                <br />- the user’s real need (not the initial request),
+                <br />- constraints and risks,
+                <br />- and a plan to validate direction early.
+              </p>
 
-            <h3>Approach</h3>
-            <p>Adapted methodology to each client's unique needs and constraints. Emphasized clear communication, realistic timelines, and measurable outcomes. Built long-term relationships through consistent delivery of high-quality work.</p>
+              <h3>Innovation before the trend: natural-language trip planning</h3>
+              <p>
+                Designing a natural-language-based trip planning experience before AI was mainstream required anticipating user expectations, building trust, and creating a flow that felt intuitive without modern AI affordances. The key wasn’t novelty—it was reducing planning friction while preserving control and transparency.
+              </p>
 
-            <h3>Tools & Technologies</h3>
-            <p>Full Adobe Creative Suite, Figma, various front-end frameworks</p>
+              <h3>Multi-sided commerce and identity design</h3>
+              <p>
+                Helping artists sell work or professionals build portfolios meant designing for:
+                <br />- trust,
+                <br />- clarity of value,
+                <br />- and conversion without manipulation.
+              </p>
+              <p>
+                These projects reinforced the importance of information design, narrative, and confidence-building—core skills in modern AI-enabled experiences.
+              </p>
+
+              <h3>Systems thinking: operational design for Burning Man camp management</h3>
+              <p>
+                The camp system wasn’t a “website project.” It was an operational platform:
+                <br />- intake and onboarding,
+                <br />- scheduling and coverage,
+                <br />- resource planning for survival constraints (water, food, shifts).
+              </p>
+              <p>
+                That’s workflow design under real consequences—where failure is measurable and immediate. I created a system that improved coordination, reduced confusion, and ensured coverage reliability.
+              </p>
+
+              <h3>Forward-looking lens</h3>
+              <p>
+                Freelance has kept my thinking adaptable: new domains, new constraints, new tools. That adaptability is central to AI-era design leadership—where the job is increasingly about shaping intelligent systems that remain legible, controllable, and valuable over time.
+              </p>
         `,
         links: `
-            <a href="#contact" class="btn btn-primary">Discuss Your Project</a>
+            
         `
     }
 };
