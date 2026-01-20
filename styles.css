@@ -1084,18 +1084,29 @@ body {
         font-size: 1.3rem;
     }
 
+    .hero-section .container {
+        display: flex;
+        flex-direction: column;
+        height: calc(100vh - 180px);
+    }
+
+    .hero-section .hero-content {
+        flex: 0 0 auto;
+    }
+
     .scroll-indicator {
-        gap: 2.8rem;
+        gap: 4.2rem;
+        margin: auto 0;
     }
 
     .scroll-indicator span {
-        font-size: 52px;
-        line-height: 52px;
+        font-size: 76px;
+        line-height: 76px;
     }
 
     .scroll-indicator svg {
-        width: 40px;
-        height: 40px;
+        width: 108px;
+        height: 134px;
     }
 
     .designer-at-desk {
