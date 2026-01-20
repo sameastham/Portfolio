@@ -964,8 +964,8 @@ body {
 }
 
 .btn-submit {
-    background: transparent;
-    color: var(--text-light);
+    background: var(--text-light);
+    color: var(--red-bg);
     border: 2px solid var(--text-light);
     padding: 14px 40px;
     font-size: 1.1rem;
@@ -974,12 +974,14 @@ body {
     align-items: center;
     gap: 10px;
     border-radius: 8px;
+    transition: all 0.3s ease;
 }
 
 .btn-submit:hover,
 .btn-submit:focus {
-    background: var(--text-light);
-    color: var(--red-bg);
+    background: transparent;
+    color: var(--text-light);
+    transform: translateY(-2px);
 }
 
 .btn-submit:disabled {
@@ -1020,6 +1022,7 @@ body {
 .btn-linkedin:focus {
     background: var(--text-light);
     color: var(--red-bg);
+    transform: translateY(-2px);
 }
 
 /* Copyright */
