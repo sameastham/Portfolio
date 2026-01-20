@@ -1201,6 +1201,44 @@ body {
     }
 }
 
+@media (min-width: 1025px) and (max-width: 1276px) {
+    .hero-title {
+        width: 100%;
+    }
+
+    .hero-title br {
+        display: none;
+    }
+
+    .gradient-text {
+        display: block;
+        width: 100%;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: flex-end;
+        align-self: flex-end;
+        width: 95%;
+    }
+
+    .hero-buttons .btn {
+        padding: 21px 42px;
+        font-size: 1.5rem;
+        gap: 15px;
+        border-radius: 45px;
+    }
+
+    .hero-buttons .btn svg {
+        width: 30px;
+        height: 30px;
+    }
+
+    .designer-at-desk {
+        width: 512px;
+    }
+}
+
 @media (max-width: 1024px) {
     .hero-content {
         grid-template-columns: 1fr;
