@@ -1078,6 +1078,11 @@ body {
 
     .hero-section .hero-content {
         flex: 0 0 auto;
+        align-items: start;
+    }
+
+    .hero-text {
+        padding-top: 4.5rem;
     }
 
     .scroll-indicator {
@@ -1095,8 +1100,17 @@ body {
         height: 134px;
     }
 
+    .hero-illustration {
+        align-items: flex-start;
+    }
+
+    .illustration-wrapper {
+        align-items: flex-start;
+    }
+
     .designer-at-desk {
         width: 850px;
+        margin-top: 9rem;
     }
 
     .purpose-badge {
