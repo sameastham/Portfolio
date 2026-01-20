@@ -969,6 +969,7 @@ body {
     border: 2px solid var(--text-light);
     padding: 14px 40px;
     font-size: 1.1rem;
+    line-height: 1;
     display: inline-flex;
     align-items: center;
     gap: 10px;
@@ -1005,6 +1006,7 @@ body {
     border: 2px solid var(--text-light);
     padding: 14px 40px;
     font-size: 1.1rem;
+    line-height: 1;
     display: inline-flex;
     align-items: center;
     gap: 10px;
