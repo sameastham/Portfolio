@@ -969,7 +969,10 @@ body {
     border: 2px solid var(--text-light);
     padding: 14px 40px;
     font-size: 1.1rem;
-    margin-top: 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
 }
 
 .btn-submit:hover,
@@ -983,15 +986,37 @@ body {
     cursor: not-allowed;
 }
 
-.contact-alternative {
-    text-align: left;
-    margin-top: 40px;
+.form-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap;
 }
 
-.contact-alternative p {
-    margin-bottom: 20px;
+.contact-alternative-text {
     font-size: 1.1rem;
     opacity: 0.9;
+}
+
+.btn-linkedin {
+    background: transparent;
+    color: var(--text-light);
+    border: 2px solid var(--text-light);
+    padding: 14px 40px;
+    font-size: 1.1rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.btn-linkedin:hover,
+.btn-linkedin:focus {
+    background: var(--text-light);
+    color: var(--red-bg);
 }
 
 /* Copyright */
@@ -1230,6 +1255,11 @@ body {
 
     .form-row {
         grid-template-columns: 1fr;
+    }
+
+    .form-actions {
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     .portfolio-grid {
