@@ -1128,6 +1128,28 @@ body {
     }
 }
 
+@media (min-width: 1277px) and (max-width: 2199px) {
+    .hero-section .hero-content {
+        align-items: start;
+    }
+
+    .hero-text {
+        padding-top: 4.5rem;
+    }
+
+    .hero-illustration {
+        align-items: flex-start;
+    }
+
+    .illustration-wrapper {
+        align-items: flex-start;
+    }
+
+    .designer-at-desk {
+        margin-top: 4.5rem;
+    }
+}
+
 @media (max-width: 1276px) {
     .hero-section {
         padding-top: 100px;
