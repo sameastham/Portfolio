@@ -552,6 +552,23 @@ document.addEventListener('DOMContentLoaded', function() {
         const nameInput = document.getElementById('name');
         const emailInput = document.getElementById('email');
         const messageInput = document.getElementById('message');
+        const submitBtn = contactForm.querySelector('.btn-submit');
+
+        // Function to check if all fields are filled
+        function updateSubmitState() {
+            const allFilled = nameInput.value.trim() !== '' &&
+                              emailInput.value.trim() !== '' &&
+                              messageInput.value.trim() !== '';
+            submitBtn.disabled = !allFilled;
+        }
+
+        // Initially disable submit button
+        submitBtn.disabled = true;
+
+        // Listen for input on all fields
+        nameInput.addEventListener('input', updateSubmitState);
+        emailInput.addEventListener('input', updateSubmitState);
+        messageInput.addEventListener('input', updateSubmitState);
 
         nameInput.addEventListener('blur', () => validateField(nameInput, 'name-error', 'Please enter your name'));
         emailInput.addEventListener('blur', () => validateEmail(emailInput));
@@ -576,7 +593,6 @@ document.addEventListener('DOMContentLoaded', function() {
             };
 
             // Show loading state
-            const submitBtn = contactForm.querySelector('.btn-submit');
             const originalBtnText = submitBtn.innerHTML;
             submitBtn.innerHTML = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle></svg> Sending...';
             submitBtn.disabled = true;
@@ -614,7 +630,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 showNotification('There was an error sending your message. Please try again or contact me via LinkedIn.', 'error');
             } finally {
                 submitBtn.innerHTML = originalBtnText;
-                submitBtn.disabled = false;
+                updateSubmitState();
                 submitBtn.removeAttribute('aria-busy');
             }
         });
