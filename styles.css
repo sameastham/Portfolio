@@ -1055,7 +1055,7 @@ body {
 }
 
 /* Responsive Design */
-@media (max-width: 1180px) {
+@media (max-width: 1276px) {
     .hero-content {
         display: grid;
         grid-template-columns: 1fr 1fr;
