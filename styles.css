@@ -1024,6 +1024,75 @@ body {
 }
 
 /* Responsive Design */
+@media (max-width: 1180px) {
+    .hero-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        gap: 30px;
+        text-align: left;
+    }
+
+    .hero-text {
+        grid-column: 1 / -1;
+        display: contents;
+    }
+
+    .hero-title {
+        grid-column: 1 / -1;
+        font-size: clamp(3rem, 8.4vw, 9rem);
+        width: 66%;
+        text-align: left;
+    }
+
+    .hero-name,
+    .hero-subtitle {
+        display: none;
+    }
+
+    .hero-buttons {
+        grid-column: 2;
+        grid-row: 2;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .hero-illustration {
+        grid-column: 1;
+        grid-row: 2;
+        position: relative;
+        height: auto;
+    }
+
+    .illustration-wrapper {
+        position: relative;
+        min-height: 300px;
+    }
+
+    .designer-at-desk {
+        position: relative;
+        top: auto;
+        right: auto;
+        left: 0;
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .ux-card {
+        display: none;
+    }
+
+    .purpose-badge {
+        display: none;
+    }
+
+    .scroll-indicator {
+        margin-top: 30px;
+    }
+}
+
 @media (max-width: 1024px) {
     .hero-content {
         grid-template-columns: 1fr;
