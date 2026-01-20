@@ -261,6 +261,7 @@ body {
 
 .gradient-text {
     font-family: 'Monoton', cursive;
+    font-weight: 200;
     background: linear-gradient(135deg, #ff00ff, #8a2be2);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -454,7 +455,7 @@ body {
 
 /* Portfolio Section */
 .portfolio-section {
-    background: var(--teal-bg);
+    background: #031D21;
     position: relative;
 }
 
@@ -472,7 +473,7 @@ body {
 .section-title {
     font-family: 'Monoton', cursive;
     font-size: 5rem;
-    font-weight: 900;
+    font-weight: 200;
     margin-bottom: 60px;
     text-align: left;
     position: relative;
