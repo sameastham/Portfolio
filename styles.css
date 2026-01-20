@@ -1082,7 +1082,7 @@ body {
     }
 
     .hero-buttons {
-        grid-column: 2;
+        grid-column: 1;
         grid-row: 2;
         flex-direction: row;
         justify-content: flex-start;
@@ -1091,31 +1091,6 @@ body {
     }
 
     .hero-illustration {
-        grid-column: 1;
-        grid-row: 2;
-        position: relative;
-        height: auto;
-    }
-
-    .illustration-wrapper {
-        position: relative;
-        min-height: 300px;
-    }
-
-    .designer-at-desk {
-        position: relative;
-        top: auto;
-        right: auto;
-        left: 0;
-        width: 100%;
-        max-width: 400px;
-    }
-
-    .ux-card {
-        display: none;
-    }
-
-    .purpose-badge {
         display: none;
     }
 
