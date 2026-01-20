@@ -334,23 +334,20 @@ body {
 /* Hero Illustration */
 .hero-illustration {
     position: relative;
-    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .illustration-wrapper {
     position: relative;
-    width: 100%;
-    height: 100%;
-}
-
-.ux-card {
-    position: absolute;
-    border-radius: 12px;
-    backdrop-filter: blur(10px);
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px;
+}
+
+.ux-card {
+    display: none;
 }
 
 .ux-card svg {
@@ -402,23 +399,12 @@ body {
 }
 
 .designer-at-desk {
-    position: absolute;
-    right: 50px;
-    top: 80px;
     width: 640px;
     height: auto;
 }
 
 .purpose-badge {
-    color: #FB7AF5;
-    position: absolute;
-    top: 8px;
-    right: 365px;
-    left: auto;
-    display: flex;
-    align-items: center;
-    font-size: 2rem;
-    line-height: 35px;
+    display: none;
 }
 
 #purpose {
