@@ -258,6 +258,10 @@ body {
     margin-bottom: 0;
 }
 
+.hero-text {
+    margin-top: 6rem;
+}
+
 .hero-title {
     font-size: 4rem;
     font-weight: 900;
@@ -349,6 +353,7 @@ body {
 .hero-illustration {
     position: relative;
     height: 640px;
+    align-self: start;
 }
 
 .illustration-wrapper {
@@ -445,6 +450,7 @@ body {
     flex-direction: row;
     align-items: center;
     gap: 2.1rem;
+    margin-top: 6rem;
     animation: bounce 2s ease-in-out infinite;
     text-decoration: none;
     cursor: pointer;
