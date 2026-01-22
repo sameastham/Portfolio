@@ -14,10 +14,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Poppins:wght@300;400;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Skip to main content link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <!-- Navigation -->
     <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
         <div class="nav-brand">
-            <img src="professional photo 1.png" alt="" class="nav-photo">
+            <img src="professional photo 1.png" alt="Picture of Sam Eastham" class="nav-photo">
             Sam Eastham
         </div>
         <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
@@ -64,6 +67,7 @@
         </ul>
     </nav>
 
+    <main id="main-content">
     <!-- Hero Section -->
     <section id="home" class="section hero-section" aria-labelledby="hero-title">
         <div class="container">
@@ -121,7 +125,7 @@
                         </div>
 
                         <!-- Person at computer image -->
-                        <img src="UXatDesk.png" alt="" class="designer-at-desk">
+                        <img src="UXatDesk.png" alt="Illustration of a UX designer working at a desk" class="designer-at-desk">
                     </div>
                 </div>
             </div>
@@ -138,7 +142,8 @@
     <!-- Portfolio Section -->
     <section id="portfolio" class="section portfolio-section" aria-labelledby="portfolio-title">
         <div class="container">
-            <h2 id="portfolio-title" class="section-title">PORTFOLIO</h2>
+            <h2 id="portfolio-title" class="section-title" aria-hidden="true">PORTFOLIO</h2>
+            <h2 class="visually-hidden">Portfolio</h2>
             <div class="portfolio-grid">
                 <article class="portfolio-card card-blue" tabindex="0" role="button" aria-label="View RealTheory project details" data-project="realtheory">
                     <img src="Portfolio icons/RealTheory.png" alt="RealTheory" class="card-logo">
@@ -225,7 +230,7 @@
         <div class="modal-content">
             <button class="modal-close" aria-label="Close modal">&times;</button>
             <div class="modal-body">
-                <h2 id="modalTitle" class="modal-title"></h2>
+                <h2 id="modalTitle" class="modal-title" tabindex="-1"></h2>
                 <p class="modal-subtitle"></p>
                 <div class="modal-description"></div>
                 <div class="modal-links"></div>
@@ -236,7 +241,8 @@
     <!-- Experience/Skills Section -->
     <section id="experience" class="section experience-section" aria-labelledby="experience-title">
         <div class="container">
-            <h2 id="experience-title" class="section-title">SKILLS</h2>
+            <h2 id="experience-title" class="section-title" aria-hidden="true">SKILLS</h2>
+            <h2 class="visually-hidden">Skills</h2>
             <div class="skills-container">
                 <div class="skills-category">
                     <h3>Applications</h3>
@@ -476,7 +482,8 @@
     <!-- About Section -->
     <section id="about" class="section about-section" aria-labelledby="about-title">
         <div class="container">
-            <h2 id="about-title" class="section-title">ABOUT</h2>
+            <h2 id="about-title" class="section-title" aria-hidden="true">ABOUT</h2>
+            <h2 class="visually-hidden">About</h2>
             <div class="about-content">
                 <div class="about-image">
                     <img src="professional photo 1.png" alt="Sam Eastham - Lead UX Designer">
@@ -496,22 +503,23 @@
     <!-- Contact Section -->
     <section id="contact" class="section contact-section" aria-labelledby="contact-title">
         <div class="container">
-            <h2 id="contact-title" class="section-title">CONTACT</h2>
+            <h2 id="contact-title" class="section-title" aria-hidden="true">CONTACT</h2>
+            <h2 class="visually-hidden">Contact</h2>
             <form class="contact-form" id="contactForm" novalidate>
                 <div class="form-row">
                     <div class="form-group">
-                        <label for="name">Name <span>*</span></label>
+                        <label for="name">Name <span aria-hidden="true">*</span><span class="visually-hidden">(required)</span></label>
                         <input type="text" id="name" name="name" required aria-required="true" aria-describedby="name-error">
                         <span id="name-error" class="error-message" role="alert"></span>
                     </div>
                     <div class="form-group">
-                        <label for="email">Email <span>*</span></label>
+                        <label for="email">Email <span aria-hidden="true">*</span><span class="visually-hidden">(required)</span></label>
                         <input type="email" id="email" name="email" required aria-required="true" aria-describedby="email-error">
                         <span id="email-error" class="error-message" role="alert"></span>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="message">Message <span>*</span></label>
+                    <label for="message">Message <span aria-hidden="true">*</span><span class="visually-hidden">(required)</span></label>
                     <textarea id="message" name="message" rows="6" required aria-required="true" aria-describedby="message-error"></textarea>
                     <span id="message-error" class="error-message" role="alert"></span>
                 </div>
@@ -535,9 +543,7 @@
             <p class="copyright">© Sam Eastham, 2026</p>
         </div>
     </section>
-
-    <!-- Skip to main content link for accessibility -->
-    <a href="#home" class="skip-link">Skip to main content</a>
+    </main>
 
     <script src="script.js"></script>
 </body>

@@ -470,8 +470,8 @@ document.addEventListener('DOMContentLoaded', function() {
         modal.setAttribute('aria-hidden', 'false');
         document.body.style.overflow = 'hidden';
 
-        // Focus the modal
-        modalClose.focus();
+        // Focus the modal title to announce it to screen readers
+        document.getElementById('modalTitle').focus();
 
         // Trap focus within modal
         trapFocus(modal);
@@ -685,7 +685,7 @@ document.addEventListener('DOMContentLoaded', function() {
         notification.className = `notification notification-${type}`;
         notification.textContent = message;
         notification.setAttribute('role', type === 'error' ? 'alert' : 'status');
-        notification.setAttribute('aria-live', 'polite');
+        notification.setAttribute('aria-live', type === 'error' ? 'assertive' : 'polite');
         notification.style.cssText = `
             position: fixed;
             top: 100px;
@@ -736,41 +736,52 @@ document.addEventListener('DOMContentLoaded', function() {
     `;
     document.head.appendChild(style);
 
-    // Intersection Observer for fade-in animations
-    const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -100px 0px'
-    };
+    // Check if user prefers reduced motion
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.style.opacity = '1';
-                entry.target.style.transform = 'translateY(0)';
-            }
+    // Intersection Observer for fade-in animations (only if motion is OK)
+    if (!prefersReducedMotion) {
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe portfolio cards for animation
+        portfolioCards.forEach((card, index) => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(30px)';
+            card.style.transition = `all 0.6s ease ${index * 0.1}s`;
+            observer.observe(card);
         });
-    }, observerOptions);
 
-    // Observe portfolio cards for animation
-    portfolioCards.forEach((card, index) => {
-        card.style.opacity = '0';
-        card.style.transform = 'translateY(30px)';
-        card.style.transition = `all 0.6s ease ${index * 0.1}s`;
-        observer.observe(card);
-    });
-
-    // Observe skill items for animation
-    const skillItems = document.querySelectorAll('.skill-item');
-    skillItems.forEach((item, index) => {
-        item.style.opacity = '0';
-        item.style.transform = 'translateX(-20px)';
-        item.style.transition = `all 0.4s ease ${index * 0.05}s`;
-        observer.observe(item);
-    });
+        // Observe skill items for animation
+        const skillItems = document.querySelectorAll('.skill-item');
+        skillItems.forEach((item, index) => {
+            item.style.opacity = '0';
+            item.style.transform = 'translateX(-20px)';
+            item.style.transition = `all 0.4s ease ${index * 0.05}s`;
+            observer.observe(item);
+        });
+    }
 });
 
 // Custom smooth scroll function with adjustable duration
 function smoothScrollTo(targetPosition, duration) {
+    // Respect reduced motion preference - jump instantly instead of animating
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        window.scrollTo(0, targetPosition);
+        return;
+    }
+
     const startPosition = window.scrollY;
     const distance = targetPosition - startPosition;
     let startTime = null;

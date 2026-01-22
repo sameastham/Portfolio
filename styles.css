@@ -210,11 +210,15 @@ body {
 .menu-toggle {
     display: none;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 5px;
     background: none;
     border: none;
     cursor: pointer;
-    padding: 5px;
+    padding: 10px;
+    min-width: 44px;
+    min-height: 44px;
 }
 
 .menu-toggle span {
@@ -262,12 +266,19 @@ body {
 .gradient-text {
     font-family: 'Monoton', sans-serif;
     font-weight: 200;
-    background: linear-gradient(135deg, #ff00ff, #8a2be2);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #ff00ff; /* Fallback for browsers that don't support background-clip: text */
     display: inline-block;
     margin-top: 4px;
+}
+
+@supports (-webkit-background-clip: text) or (background-clip: text) {
+    .gradient-text {
+        background: linear-gradient(135deg, #ff00ff, #8a2be2);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        color: transparent;
+    }
 }
 
 .hero-name {
@@ -478,12 +489,25 @@ body {
     margin-bottom: 60px;
     text-align: left;
     position: relative;
-    /*text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.3);*/
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
     letter-spacing: 2px;
 }
 
+/* Visually hidden but accessible to screen readers */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
 .portfolio-section .section-title {
-    color: rgba(0, 212, 255, 0.5);
+    color: rgba(0, 212, 255, 0.85);
 }
 
 .portfolio-grid {
@@ -759,7 +783,7 @@ body {
 }
 
 .experience-section .section-title {
-    color: rgba(255, 215, 0, 0.6);
+    color: rgba(255, 215, 0, 0.9);
 }
 
 .skills-container {
@@ -784,7 +808,8 @@ body {
     display: flex;
     align-items: center;
     gap: 12px;
-    padding: 10px;
+    padding: 12px 14px;
+    min-height: 44px;
     margin-bottom: 10px;
     background: rgba(255, 255, 255, 0.2);
     border-radius: 8px;
@@ -826,7 +851,7 @@ body {
 }
 
 .about-section .section-title {
-    color: rgba(144, 238, 144, 0.6);
+    color: rgba(144, 238, 144, 0.9);
 }
 
 .about-content {
@@ -901,7 +926,7 @@ body {
 }
 
 .contact-section .section-title {
-    color: rgba(255, 182, 193, 0.6);
+    color: rgba(255, 182, 193, 0.9);
 }
 
 .contact-form {
