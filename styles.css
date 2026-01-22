@@ -260,7 +260,7 @@ body {
 }
 
 .gradient-text {
-    font-family: 'Monoton', cursive;
+    font-family: 'Monoton', sans-serif;
     font-weight: 200;
     background: linear-gradient(135deg, #ff00ff, #8a2be2);
     -webkit-background-clip: text;
@@ -472,7 +472,7 @@ body {
 }
 
 .section-title {
-    font-family: 'Monoton', cursive;
+    font-family: 'Monoton', sans-serif;
     font-size: 5rem;
     font-weight: 200;
     margin-bottom: 60px;
