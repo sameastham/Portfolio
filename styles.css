@@ -254,8 +254,8 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 60px;
-    align-items: center;
-    margin-bottom: 60px;
+    align-items: end;
+    margin-bottom: 0;
 }
 
 .hero-title {
@@ -302,6 +302,7 @@ body {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
+    margin-bottom: 10rem;
 }
 
 .btn {
@@ -347,7 +348,7 @@ body {
 /* Hero Illustration */
 .hero-illustration {
     position: relative;
-    height: 450px;
+    height: 640px;
 }
 
 .illustration-wrapper {
@@ -1169,7 +1170,7 @@ body {
 
     .scroll-indicator {
         gap: 4.2rem;
-        margin: auto 0;
+        margin: 0;
     }
 
     .scroll-indicator span {
