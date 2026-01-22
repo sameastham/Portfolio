@@ -366,37 +366,37 @@ body {
 }
 
 .ux-card.card-1 {
-    width: 105px;
-    height: 75px;
-    top: 70px;
-    right: 620px;
+    width: 130px;
+    height: 130px;
+    top: 265px;
+    right: 690px;
     left: auto;
     animation: float 3s ease-in-out infinite;
 }
 
 .ux-card.card-2 {
     width: 105px;
-    height: 75px;
-    top: 120px;
-    right: 120px;
+    height: 105px;
+    top: 385px;
+    right: 210px;
     left: auto;
     animation: float 3s ease-in-out infinite 0.5s;
 }
 
 .ux-card.card-3 {
-    width: 105px;
-    height: 75px;
-    top: 250px;
-    right: 120px;
+    width: 150px;
+    height: 120px;
+    top: 490px;
+    right: 160px;
     left: auto;
     animation: float 3s ease-in-out infinite 1s;
 }
 
 .ux-card.card-4 {
-    width: 105px;
-    height: 75px;
-    bottom: 145px;
-    right: 680px;
+    width: 110px;
+    height: 110px;
+    top: 525px;
+    right: 690px;
     left: auto;
     animation: float 3s ease-in-out infinite 1.5s;
 }
@@ -415,7 +415,8 @@ body {
     top: 8px;
     right: 365px;
     left: auto;
-    display: flex;
+    /*display: flex;*/
+    display: none;
     align-items: center;
     font-size: 2rem;
     line-height: 35px;
