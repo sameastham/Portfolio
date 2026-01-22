@@ -79,7 +79,7 @@ body {
     right: 0;
     background: rgba(10, 10, 10, 0.95);
     backdrop-filter: blur(10px);
-    padding: 20px calc((100vw - 1400px) / 2);
+    padding: 26px calc((100vw - 1400px) / 2);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -90,7 +90,7 @@ body {
 
 @media (max-width: 1400px) {
     .navbar {
-        padding: 20px 20px;
+        padding: 26px 26px;
     }
 }
 
@@ -153,44 +153,46 @@ body {
 
 .nav-brand {
     font-family: 'Oswald', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     font-weight: 700;
     color: var(--text-light);
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 13px;
 }
 
 .nav-photo {
-    width: 36px;
-    height: 36px;
+    width: 48px;
+    height: 48px;
     border-radius: 50%;
     object-fit: cover;
     object-position: center;
-    border: 2px solid rgba(255, 255, 255, 0.3);
+    border: 3px solid rgba(255, 255, 255, 0.3);
 }
 
 .nav-menu {
     display: flex;
     list-style: none;
-    gap: 30px;
+    gap: 40px;
 }
 
 .nav-link {
     color: var(--text-light);
     text-decoration: none;
-    font-size: 0.95rem;
+    font-size: 1.25rem;
     font-weight: 500;
     transition: color 0.3s ease;
     position: relative;
-    padding: 5px 0;
+    padding: 7px 0;
     display: flex;
     align-items: center;
-    gap: 6px;
+    gap: 8px;
 }
 
 .nav-link svg {
     flex-shrink: 0;
+    width: 21px;
+    height: 21px;
 }
 
 .nav-link:hover {
@@ -200,10 +202,10 @@ body {
 .nav-link.active::after {
     content: '';
     position: absolute;
-    bottom: -5px;
+    bottom: -7px;
     left: 0;
     right: 0;
-    height: 2px;
+    height: 3px;
     background: currentColor;
 }
 
@@ -234,7 +236,7 @@ body {
     background: var(--dark-bg);
     position: relative;
     align-items: flex-start;
-    padding-top: 140px;
+    padding-top: 160px;
 }
 
 .hero-section::before {
@@ -1088,7 +1090,7 @@ body {
     }
 
     .navbar {
-        padding: 20px calc((100vw - 1800px) / 2);
+        padding: 26px calc((100vw - 1800px) / 2);
     }
 
     .hero-title {
@@ -1118,6 +1120,7 @@ body {
 
     .hero-section .hero-content {
         flex: 0 0 auto;
+        align-items: center;
     }
 
     .scroll-indicator {
@@ -1419,7 +1422,7 @@ body {
     }
 
     .navbar {
-        padding: 15px 20px;
+        padding: 20px 26px;
     }
 
     .portfolio-card {
